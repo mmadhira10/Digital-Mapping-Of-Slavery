@@ -24,10 +24,10 @@ export default function MenuAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" style={{backgroundColor: '#441F1F'}}>
         <Toolbar>
-          <Button color="inherit" style={{maxWidth: '407px', maxHeight: '100px', minWidth: '407px', minHeight: '100px'}}>HOME</Button>
-          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '100px', minWidth: '407px', minHeight: '100px'}}>MAP</Button>
-          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '100px', minWidth: '407px', minHeight: '100px'}}>ABOUT</Button>
-          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '100px', minWidth: '407px', minHeight: '100px'}}>CONTACT</Button>
+          <Button color="inherit" style={{maxWidth: '407px', maxHeight: '75px', minWidth: '407px', minHeight: '75px'}}>HOME</Button>
+          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '407px', minHeight: '75px'}}>MAP</Button>
+          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '407px', minHeight: '75px'}}>ABOUT</Button>
+          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '407px', minHeight: '75px'}}>CONTACT</Button>
         </Toolbar>
       </AppBar>
     </Box>
