@@ -13,21 +13,22 @@ export default function MenuAppBar() {
   const theme = createTheme({
     typography: {
       button: {
-        fontStyle: 'italic',
-        fontSize: 24,
-        fontFamily: '"Helvetica Neue"'
+        fontSize: 18,
+        letterSpacing: '3px',
+        fontFamily: '"Cambria"',
+        color: "#E9D1B5"
       },
     },
   });
   return (
     <ThemeProvider theme={theme}>
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" style={{backgroundColor: '#441F1F'}}>
+      <AppBar position="absolute" style={{backgroundColor: '#441F1F'}}>
         <Toolbar>
-          <Button color="inherit" style={{maxWidth: '407px', maxHeight: '75px', minWidth: '407px', minHeight: '75px'}}>HOME</Button>
-          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '407px', minHeight: '75px'}}>MAP</Button>
-          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '407px', minHeight: '75px'}}>ABOUT</Button>
-          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '407px', minHeight: '75px'}}>CONTACT</Button>
+          <Button color="inherit" style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}>HOME</Button>
+          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}>MAP</Button>
+          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}>ABOUT</Button>
+          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}>CONTACT</Button>
         </Toolbar>
       </AppBar>
     </Box>
