@@ -8,7 +8,6 @@ const pool = require('./db')
 
 async function result () {
     const table = await pool.query("SELECT * FROM locations");
-    console.log("hi")
     return table;
   }
     
