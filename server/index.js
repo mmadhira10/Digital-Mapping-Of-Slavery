@@ -6,12 +6,14 @@ app.use(express.json());
 
 const pool = require('./db')
 
-async function result () {
-    const table = await pool.query("SELECT * FROM locations");
-    return table;
-  }
+// test
+// async function result () {
+//     const table = await pool.query("SELECT * FROM locations");
+//     console.log(table);
+//     return table;
+//   }
     
-console.log(result());
+// result();
 
 pool.on('error', console.error.bind(console, 'SQL connection error:'))
 
