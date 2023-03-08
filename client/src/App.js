@@ -5,9 +5,6 @@ import {
     HomeScreen 
 } from "./components";
 
-
-// import "../styles/home.css"
-
 const App = () =>{
     return (
         <BrowserRouter>

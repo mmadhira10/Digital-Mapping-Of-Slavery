@@ -7,15 +7,17 @@ import SearchIcon from '@mui/icons-material/Search';
 import InputLabel from '@mui/material/InputLabel';
 import InputAdornment from '@mui/material/InputAdornment';
 
+
+
 export default function SearchBar() {
     const theme = createTheme({
-      typography: {
         TextField: {
           fontSize: 24,
           fontFamily: '"Helvetica"',
-          color: "#E9D1B5"
+          color: "#E9D1B5",
+          border: '3px solid',
+          borderColor: '#8E3E3E'
         },
-      },
     });
     return (
       <ThemeProvider theme={theme}>
