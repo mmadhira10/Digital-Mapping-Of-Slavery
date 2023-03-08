@@ -6,7 +6,7 @@ import { styled } from '@mui/material/styles';
 import Button, { ButtonProps } from '@mui/material/Button';
 import { Typography } from "@mui/material";
 import Box from '@mui/material/Box';
-import background from './img/background.jpg';
+import background from './img/WorldImage.jpg';
 
 const NewButton = styled(Button)({
     boxShadow: 'none',
@@ -54,8 +54,8 @@ export default function HomeScreen() {
 
     return(
         <ThemeProvider theme={theme}>
-            <Box sx={{ flexGrow: 3 }} >
-            {/* <Box sx={{ flexGrow: 3 }} style={{ backgroundImage: `url(${background})`, position: 'absolute', left: 0, right: 0, top: 0, height: '100%'}}> */}
+            {/* <Box sx={{ flexGrow: 3 }} > */}
+            <Box sx={{ flexGrow: 3 }} style={{ backgroundImage: `url(${background})`, position: 'absolute', left: 0, right: 0, top: 0, height: '100%'}}>
                 <Box class="styledTextField" style={{position: 'static', maxWidth: '75%', margin: 'auto', marginTop: '200px'}}>
                     <Typography variant="h1"> MAPPING THE LEGACIES OF SLAVERY </Typography>
                 </Box>

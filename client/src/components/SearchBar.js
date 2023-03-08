@@ -21,14 +21,14 @@ export default function SearchBar() {
     });
     return (
       <ThemeProvider theme={theme}>
-        <TextField fullWidth id="outlined-start-adornment" label="Search..." variant="outlined"
+        <TextField fullWidth id="outlined-start-adornment" variant="outlined"
             InputProps={{
                 startAdornment: 
                   <InputAdornment position="start">
                     <SearchIcon/>
                   </InputAdornment>,
               }}
-              style={{borderRadius: '2px'}}
+              style={{borderRadius: '2px', backgroundColor: 'linen'}}
         >
             
         </TextField>
