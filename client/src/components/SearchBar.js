@@ -7,26 +7,28 @@ import SearchIcon from '@mui/icons-material/Search';
 import InputLabel from '@mui/material/InputLabel';
 import InputAdornment from '@mui/material/InputAdornment';
 
+
+
 export default function SearchBar() {
     const theme = createTheme({
-      typography: {
         TextField: {
           fontSize: 24,
           fontFamily: '"Helvetica"',
-          color: "#E9D1B5"
+          color: "#E9D1B5",
+          border: '3px solid',
+          borderColor: '#8E3E3E'
         },
-      },
     });
     return (
       <ThemeProvider theme={theme}>
-        <TextField fullWidth id="outlined-start-adornment" label="Search..." variant="outlined"
+        <TextField fullWidth id="outlined-start-adornment" variant="outlined"
             InputProps={{
                 startAdornment: 
                   <InputAdornment position="start">
                     <SearchIcon/>
                   </InputAdornment>,
               }}
-              style={{borderRadius: '2px'}}
+              style={{borderRadius: '2px', backgroundColor: 'linen'}}
         >
             
         </TextField>
