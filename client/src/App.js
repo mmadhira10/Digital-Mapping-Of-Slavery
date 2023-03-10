@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { 
     MenuAppBar,
-    HomeScreen 
+    HomeScreen,
+    MapScreen 
 } from "./components";
 
 const App = () =>{
@@ -11,6 +12,7 @@ const App = () =>{
             <MenuAppBar/>
             <Routes> 
                 <Route path='/' element={<HomeScreen/>} /> 
+                <Route path='map' element={<MapScreen/>} />
             </Routes>
         </BrowserRouter>
     )

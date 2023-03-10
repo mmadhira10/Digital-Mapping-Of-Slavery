@@ -1,0 +1,12 @@
+/* body {
+    background-image: url(background.jpg);
+    background-size: 100%;
+}
+
+.styledTextField fieldset {
+    border-radius: '25px';
+} */
+
+.leaflet-container {
+  height:100vh;  
+}
