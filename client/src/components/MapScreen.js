@@ -1,6 +1,6 @@
 import * as React from 'react';
 import "leaflet/dist/leaflet.css";
-import "../style.css";
+import "./style.css";
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { MapContainer, TileLayer } from "react-leaflet"

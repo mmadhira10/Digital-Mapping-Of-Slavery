@@ -28,10 +28,10 @@ module.exports = {
         exclude: /node_modules/, 
         loader: 'babel-loader'
       },
-      // {
-      //   test: /\.css$/,
-      //   loader: "style-loader!css-loader"
-      // }, 
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      }, 
       {
         test: /\.(jpe?g|png|gif|woff|woff2|otf|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
         use: [
