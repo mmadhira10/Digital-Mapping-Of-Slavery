@@ -30,10 +30,10 @@ export default function MenuAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="absolute" style={{backgroundColor: '#441F1F'}}>
         <Toolbar>
-          <Button color="inherit" style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}><Link style={{color: "#E9D1B5", textDecoration: "none"}} to="/">HOME</Link></Button>
-          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}><Link style={{color: "#E9D1B5", textDecoration: "none"}}  to="/map">MAP</Link></Button>
-          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}><Link style={{color: "#E9D1B5", textDecoration: "none"}}  to="/about">ABOUT</Link></Button>
-          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}><Link style={{color: "#E9D1B5", textDecoration: "none"}} to="/contact">CONTACT</Link></Button>
+          <Button color="inherit" style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}} href="/">HOME</Button>
+          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}} href="/map">MAP</Button>
+          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}>ABOUT</Button>
+          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}>CONTACT</Button>
         </Toolbar>
       </AppBar>
     </Box>

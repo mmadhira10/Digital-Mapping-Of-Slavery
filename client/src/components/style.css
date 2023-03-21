@@ -1,0 +1,24 @@
+/* body {
+    background-image: url(background.jpg);
+    background-size: 100%;
+}
+
+.styledTextField fieldset {
+    border-radius: '25px';
+} */
+
+.leaflet-container {
+  /* padding: 40px 0px 0px 0px;  */
+  height: 90vh;  
+  position: fixed;
+  top: 65px;
+  bottom: 0px;
+  width: 100%;
+}
+
+/* #map {
+  position: fixed;
+  top: 75px;
+  bottom: 0px;
+  width: 100%;
+} */
