@@ -3,7 +3,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { 
     MenuAppBar,
     HomeScreen,
-    MapScreen 
+    MapScreen, 
+    AboutPage, 
+    ContactPage
 } from "./components";
 
 const App = () =>{
@@ -13,6 +15,8 @@ const App = () =>{
             <Routes> 
                 <Route path='/' element={<HomeScreen/>} /> 
                 <Route path='/map' element={<MapScreen/>} />
+                <Route path='/about' element={<AboutPage/>} /> 
+                <Route path='/contact' element={<ContactPage/>} /> 
             </Routes>
         </BrowserRouter>
     )

@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Link } from "react-router-dom";
 
 
 export default function MenuAppBar() {
@@ -18,6 +19,10 @@ export default function MenuAppBar() {
         fontFamily: '"Cambria"',
         color: "#E9D1B5"
       },
+      link: {
+        color: "#E9D1B5", 
+        textDecoration: "none"
+      }
     },
   });
   return (
