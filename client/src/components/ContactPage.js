@@ -48,6 +48,14 @@ export default function ContactPage() {
             fontSize: 40,
             fontFamily: '"Cambria"',
             fontColor: "Black",
+            fontWeight: "bold",
+            fontStyle: "italic",
+          },
+          h3: {
+            fontSize: 28,
+            fontFamily: '"Cambria"',
+            fontColor: "Black",
+            fontWeight: "bold",
             fontStyle: "italic",
           },
           p: {
@@ -63,7 +71,14 @@ export default function ContactPage() {
             <Box sx={{ flexGrow: 3 }} style={{ backgroundImage: `url(${paper})`, position: 'absolute', left: 0, right: 0, top: 0, height: '100%'}}>
               <Box class="styledTextField" style={{position: 'static', maxWidth: '85%', margin: 'auto', marginTop: '150px'}}>
                 <Typography variant="h2"> Contact </Typography>
-                <Typography variant="p"> For more information, please contact... </Typography>
+                <Typography variant="p"> <b> Prof. Aurélie Vialette. </b> <br/> Hispanic Languages and Literature, History, CAS. <br/> <a href="mailto: aurelie.vialette@stonybrook.edu"> aurelie.vialette@stonybrook.edu </a></Typography>
+                <br/><br/>
+                <Typography variant="h3"> Students </Typography>
+                <Typography variant="p"> <b> Adrianna Peng </b> <br/> Computer Science, CEAS. <br/> <a href="mailto: adrianna.peng@stonybrook.edu"> adrianna.peng@stonybrook.edu </a>
+                </Typography>
+                <br/><br/>
+                <Typography variant="p"> <b> Mihir Madira </b> <br/> Computer Science, CEAS. <br/> <a href="mailto: mihir.madhira@stonybrook.edu"> mihir.madhira@stonybrook.edu </a>
+                </Typography>
               </Box>
             </Box>
         </ThemeProvider>
