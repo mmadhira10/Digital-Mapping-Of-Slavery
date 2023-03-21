@@ -5,7 +5,10 @@ import {
     HomeScreen,
     MapScreen, 
     AboutPage, 
-    ContactPage
+    ContactPage,
+    PeoplePage,
+    BusinessesPage,
+    PlacesPage
 } from "./components";
 
 const App = () =>{
@@ -17,6 +20,9 @@ const App = () =>{
                 <Route path='/map' element={<MapScreen/>} />
                 <Route path='/about' element={<AboutPage/>} /> 
                 <Route path='/contact' element={<ContactPage/>} /> 
+                <Route path='/people' element={<PeoplePage/>} /> 
+                <Route path='/businesses' element={<BusinessesPage/>} />
+                <Route path='/places' element={<PlacesPage/>} />  
             </Routes>
         </BrowserRouter>
     )
