@@ -12,7 +12,7 @@ const App = () =>{
             <MenuAppBar/>
             <Routes> 
                 <Route path='/' element={<HomeScreen/>} /> 
-                <Route path='map' element={<MapScreen/>} />
+                <Route path='/map' element={<MapScreen/>} />
             </Routes>
         </BrowserRouter>
     )

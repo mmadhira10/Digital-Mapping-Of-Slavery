@@ -8,5 +8,17 @@
 } */
 
 .leaflet-container {
-  height:100vh;  
+  /* padding: 40px 0px 0px 0px;  */
+  height: 90vh;  
+  position: fixed;
+  top: 65px;
+  bottom: 0px;
+  width: 100%;
 }
+
+/* #map {
+  position: fixed;
+  top: 75px;
+  bottom: 0px;
+  width: 100%;
+} */
