@@ -9,9 +9,9 @@
 
 .leaflet-container {
   /* padding: 40px 0px 0px 0px;  */
-  height: 90vh;  
+  height: 87vh;  
   position: fixed;
-  top: 65px;
+  top: 75px;
   bottom: 0px;
   width: 100%;
 }
