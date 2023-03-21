@@ -6,7 +6,7 @@ import { styled } from '@mui/material/styles';
 import Button, { ButtonProps } from '@mui/material/Button';
 import { Typography } from "@mui/material";
 import Box from '@mui/material/Box';
-import background from './img/WorldImage.jpg';
+import paper from './img/paper.png';
 
 const NewButton = styled(Button)({
     boxShadow: 'none',
@@ -37,15 +37,21 @@ const NewButton = styled(Button)({
     },
 });
 
-export default function HomeScreen() {
+export default function ContactPage() {
     const theme = createTheme({
         typography: {
           button: {
             fontSize: 24,
             fontFamily: '"Cambria"',
           },
-          h1: {
-            fontSize: 72,
+          h2: {
+            fontSize: 40,
+            fontFamily: '"Cambria"',
+            fontColor: "Black",
+            fontStyle: "italic",
+          },
+          p: {
+            fontSize: 20,
             fontFamily: '"Cambria"',
             fontColor: "Black",
           }
@@ -54,18 +60,11 @@ export default function HomeScreen() {
 
     return(
         <ThemeProvider theme={theme}>
-            <Box sx={{ flexGrow: 3 }} style={{ backgroundImage: `url(${background})`, position: 'absolute', left: 0, right: 0, top: 0, height: '100%'}}>
-                <Box class="styledTextField" style={{position: 'static', maxWidth: '75%', margin: 'auto', marginTop: '200px'}}>
-                    <Typography variant="h1"> MAPPING THE <br/> LEGACIES OF <br/> SLAVERY </Typography>
-                </Box>
-                <Box class="styledTextField" style={{position: 'static', maxWidth: '75%', margin: 'auto', marginTop: '50px'}}>
-                    <SearchBar/>
-                </Box>
-                <Box style={{position: 'static', maxWidth: '50%', margin: 'auto', fontSize: '24px', padding: '40px'}}>
-                    <NewButton>People</NewButton>
-                    <NewButton>Places</NewButton>
-                    <NewButton>Businesses</NewButton>
-                </Box>
+            <Box sx={{ flexGrow: 3 }} style={{ backgroundImage: `url(${paper})`, position: 'absolute', left: 0, right: 0, top: 0, height: '100%'}}>
+              <Box class="styledTextField" style={{position: 'static', maxWidth: '85%', margin: 'auto', marginTop: '150px'}}>
+                <Typography variant="h2"> Contact </Typography>
+                <Typography variant="p"> For more information, please contact... </Typography>
+              </Box>
             </Box>
         </ThemeProvider>
     );

@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Link } from "react-router-dom";
 
 
 export default function MenuAppBar() {
@@ -18,6 +19,10 @@ export default function MenuAppBar() {
         fontFamily: '"Cambria"',
         color: "#E9D1B5"
       },
+      link: {
+        color: "#E9D1B5", 
+        textDecoration: "none"
+      }
     },
   });
   return (
@@ -25,10 +30,10 @@ export default function MenuAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="absolute" style={{backgroundColor: '#441F1F'}}>
         <Toolbar>
-          <Button color="inherit" style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}>HOME</Button>
-          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}>MAP</Button>
-          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}>ABOUT</Button>
-          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}>CONTACT</Button>
+          <Button color="inherit" style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}><Link style={{color: "#E9D1B5", textDecoration: "none"}} to="/">HOME</Link></Button>
+          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}><Link style={{color: "#E9D1B5", textDecoration: "none"}}  to="/map">MAP</Link></Button>
+          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}><Link style={{color: "#E9D1B5", textDecoration: "none"}}  to="/about">ABOUT</Link></Button>
+          <Button color="inherit"  style={{maxWidth: '407px', maxHeight: '75px', minWidth: '25%', minHeight: '60px'}}><Link style={{color: "#E9D1B5", textDecoration: "none"}} to="/contact">CONTACT</Link></Button>
         </Toolbar>
       </AppBar>
     </Box>
