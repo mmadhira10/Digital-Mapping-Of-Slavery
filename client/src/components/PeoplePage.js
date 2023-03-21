@@ -62,7 +62,7 @@ export default function PeoplePage() {
         <ThemeProvider theme={theme}>
             <Box sx={{ flexGrow: 3 }} style={{ backgroundImage: `url(${paper})`, position: 'absolute', left: 0, right: 0, top: 0, height: '100%'}}>
               <Box class="styledTextField" style={{position: 'static', maxWidth: '85%', margin: 'auto', marginTop: '150px'}}>
-                <Typography variant="h2"> Contact </Typography>
+                <Typography variant="h2"> People </Typography>
                 <Typography variant="p"> For more information, please contact... </Typography>
               </Box>
             </Box>

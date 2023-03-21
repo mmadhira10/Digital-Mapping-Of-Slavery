@@ -62,9 +62,9 @@ export default function HomeScreen() {
                     <SearchBar/>
                 </Box>
                 <Box style={{position: 'static', maxWidth: '50%', margin: 'auto', fontSize: '24px', padding: '40px'}}>
-                    <NewButton>People</NewButton>
-                    <NewButton>Places</NewButton>
-                    <NewButton>Businesses</NewButton>
+                    <NewButton href="/people">People</NewButton>
+                    <NewButton href="/places">Places</NewButton>
+                    <NewButton href="/businesses">Businesses</NewButton>
                 </Box>
             </Box>
         </ThemeProvider>

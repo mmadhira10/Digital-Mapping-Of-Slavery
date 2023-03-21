@@ -2,9 +2,13 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { 
     MenuAppBar,
-    HomeScreen, 
+    HomeScreen,
+    MapScreen, 
     AboutPage, 
-    ContactPage
+    ContactPage,
+    PeoplePage,
+    BusinessesPage,
+    PlacesPage
 } from "./components";
 
 const App = () =>{
@@ -13,12 +17,12 @@ const App = () =>{
             <MenuAppBar/>
             <Routes> 
                 <Route path='/' element={<HomeScreen/>} /> 
-                {/* <Route path='/map' element={<Map/>} />  */}
+                <Route path='/map' element={<MapScreen/>} />
                 <Route path='/about' element={<AboutPage/>} /> 
                 <Route path='/contact' element={<ContactPage/>} /> 
-                {/* <Route path='/people'' element={<PeoplePage/>} /> 
+                <Route path='/people' element={<PeoplePage/>} /> 
+                <Route path='/businesses' element={<BusinessesPage/>} />
                 <Route path='/places' element={<PlacesPage/>} />
-                <Route path='/busine element={<BusinessesPage/>} />   */}
             </Routes>
         </BrowserRouter>
     )
