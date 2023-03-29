@@ -8,12 +8,13 @@
 } */
 
 .leaflet-container {
-  /* padding: 40px 0px 0px 0px;  */
-  height: 87vh;  
+  /* padding: 90px -20px 0px 0px;  */
+  height: 92vh;  
   position: fixed;
   top: 65px;
   bottom: 0px;
   left: 0px;
+  right: 15px;
   width: 100%;
 }
 
