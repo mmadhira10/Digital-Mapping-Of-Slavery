@@ -11,7 +11,7 @@ router.get('/map', async (req, res) => {
             return;
         }
 
-        res.json({table: table});
+        res.status(200).json({table: table});
     });
 })
 
