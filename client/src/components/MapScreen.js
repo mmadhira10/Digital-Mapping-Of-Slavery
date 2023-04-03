@@ -4,19 +4,25 @@ import Box from '@mui/material/Box';
 import paper from './img/paper.png';
 import "./style.css";
 import axios from 'axios';
-
+import { Icon } from "leaflet";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { MapContainer, TileLayer, Marker, Popup} from "react-leaflet";
 
+
 export default function MapScreen () {
     const theme = createTheme();
-    const [map, setMap] = useState();
+    const [map, setMap] = useState([]);
 
+    const markerIcon = new Icon({
+        iconUrl: require("./img/pin.png"),
+        shadowUrl: require("./img/shadow.png"),
+        iconSize: [35,45]
+    })
+    console.log(markerIcon);
     async function getTables() {
         try {
             const response = await axios.get("http://localhost:4000/map");
-            console.log(response.data["table"][0]);
-            setMap(response.data["table"][0]);
+            setMap(response.data.table[0]);
         }
         catch (error) {
             console.log(error);
@@ -27,18 +33,19 @@ export default function MapScreen () {
         getTables();
     }, []);
 
+    console.log(map);
     return(
         <Box sx={{ flexGrow: 3 }} style={{ backgroundImage: `url(${paper})`, position: 'absolute', left: 0, right: 0, top: 0, height: '100%'}}>
-            <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+            <MapContainer center={[51.505, -0.09]} zoom={3} scrollWheelZoom={false}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <Marker position={[51.505, -0.09]}>
-                    <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
-                    </Popup>
-                </Marker>
+                {map.map((point) => (
+                    <Marker position={[point.latitude, point.longitude]} icon={markerIcon}>
+
+                    </Marker>
+                ))}       
             </MapContainer>
         </Box>
     )
