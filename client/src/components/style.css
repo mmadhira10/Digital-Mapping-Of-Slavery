@@ -18,6 +18,20 @@
   width: 100%;
 }
 
+.request-popup .leaflet-popup-content-wrapper {
+  border-radius: 0px;
+}
+
+.leaflet-popup {
+  padding-bottom: 50px; /* adjust as you see fit */
+}
+
+/* .leaflet-popup-tip {
+  background: rgba(0, 0, 0, 0) !important;
+  box-shadow: none !important;
+} */
+
+
 /* #map {
   position: fixed;
   top: 75px;
